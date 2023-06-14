@@ -11,6 +11,7 @@ package com.mycompany.mvcjavaloginpractice;
 public class MvcJavaLoginPractice {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        view.Login lg = new view.Login();
+        lg.setVisible(true);
     }
 }
