@@ -17,17 +17,11 @@ public class cBuild extends javax.swing.JFrame{
     /**
      * Creates new form cHome
      */
-    private String usr;
-    private int c=0;
-                    
+    private int c=0;        
     public cBuild() {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Crear Edificio");
-    }
-    
-    public void setUsr(String usr){
-        this.usr = usr;
     }
 
     /**
@@ -311,11 +305,9 @@ public class cBuild extends javax.swing.JFrame{
     private void cElevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cElevActionPerformed
         if(elev.isSelected()){
             try {
-
                 String strS = irAPiso(Integer.parseInt(pDes.getText()),c);
                 c = Integer.parseInt(pDes.getText());
                 textElev.setText(strS);
-
             } catch (InterruptedException ex) {
                 Logger.getLogger(cBuild.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -353,12 +345,9 @@ public class cBuild extends javax.swing.JFrame{
         int d = Integer.parseInt(cDep.getText());
         int p = Integer.parseInt(cPis.getText());
         Double pT = Double.valueOf(pTerr.getText());
-        
         double r = 0;
-        
         //Añade el 135% del valor de el terreno
         r += (135 / 100) * pT;
-
         //Suma la cantidad de departamentos
         if(d < 15 && pT > 50000){
             r += 10000;
@@ -369,7 +358,6 @@ public class cBuild extends javax.swing.JFrame{
         }else if(d >= 25 ){
             r += 35000;
         }
-
         //Suma de cantidad de pisos
         if(p == 1 ){
             r += 15000;
@@ -382,15 +370,12 @@ public class cBuild extends javax.swing.JFrame{
         }else if(p > 4){
             r+= 60000;
         }
-
         //Suma si tiene ascensor
         if(elev.isSelected()){
             r += 67000;
         }
-
         //Retorna resultado
         return r;
-    
     }
     
     void loadBuild(){

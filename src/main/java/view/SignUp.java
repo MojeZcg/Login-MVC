@@ -4,7 +4,6 @@
  */
 package view;
 import java.awt.event.KeyEvent;
-import java.sql.*;
 /**
  *
  * @author Moje
