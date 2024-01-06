@@ -80,7 +80,7 @@ mvc-login-system/
 
 ## Contribution
 
-Contributions are welcome! If you have suggestions, feature requests, or find any issues, feel free to open an [issue](https://github.com/your-username/mvc-login-system/issues) or submit a [pull request](https://github.com/your-username/mvc-login-system/pulls).
+Contributions are welcome! If you have suggestions, feature requests, or find any issues, feel free to open an [issue](https://github.com/MojeZcg/Login-MVC/issues) or submit a [pull request](https://github.com/MojeZcg/Login-MVC/pulls).
 
 ## License
 
